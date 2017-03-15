@@ -1,0 +1,16 @@
+base: &base
+  adapter: mysql2
+
+development:
+  <<: *base
+  host: 127.0.0.1
+  username: root
+  password: root123
+  database: database
+
+production:
+  <<: *base
+  host:
+  username:
+  password:
+  database:
